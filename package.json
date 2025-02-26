@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "devDependencies": {
+    "@textlint/types": "^14.4.2",
+    "@types/node": "^20.17.19",
+    "textlint-scripts": "^14.4.2",
+    "textlint-tester": "^14.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "name": "textlint-rule-hatena-markdown-syntax-highlight",
+  "description": "はてなのコードブロックでシンタックスハイライトの記法が正しいか判定します",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusei-murai/textlint-rule-hatena-markdown-syntax-highlight.git"
+  },
+  "author": "yusei-murai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yusei-murai/textlint-rule-hatena-markdown-syntax-highlight/issues"
+  },
+  "homepage": "https://github.com/yusei-murai/textlint-rule-hatena-markdown-syntax-highlight#readme"
+}
