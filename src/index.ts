@@ -1,26 +1,13 @@
 import type { TextlintRuleModule } from "@textlint/types";
+import { languages } from "./consts/languages";
 
-export interface Options {
-    // If node's text includes allowed text, does not report.
-    allows?: string[];
-}
-
-const report: TextlintRuleModule<Options> = (context, options = {}) => {
-    const { Syntax, RuleError, report, getSource, locator } = context;
-    const allows = options.allows ?? [];
+const report: TextlintRuleModule = (context) => {
+    const { Syntax, RuleError, report } = context;
     return {
-        [Syntax.Str](node) { // "Str" node
-            const text = getSource(node); // Get text
-            if (allows.some(allow => text.includes(allow))) {
-                return;
-            }
-            const matches = text.matchAll(/bugs/g);
-            for (const match of matches) {
-                const index = match.index ?? 0;
-                const matchRange = [index, index + match[0].length] as const;
-                const ruleError = new RuleError("Found bugs.", {
-                    padding: locator.range(matchRange)
-                });
+        [Syntax.CodeBlock](node) {
+            const lang = node.lang || '';
+            if (!languages.includes(lang)) {
+                const ruleError = new RuleError(`不正なシンタックスハイライトのファイルタイプが見つかりました。:${lang}`);
                 report(node, ruleError);
             }
         }
