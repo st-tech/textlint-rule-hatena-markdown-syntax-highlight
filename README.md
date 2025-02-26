@@ -1,6 +1,6 @@
 # textlint-rule-hatena-markdown-syntax-highlight
 
-はてなのコードブロックでシンタックスハイライトの記法が正しいか判定します
+はてなのコードブロックで、シンタックスハイライトの記法が[対応しているファイルタイプ](https://help.hatenablog.com/entry/markup/syntaxhighlight)か判定します。また、はてなではコンマ区切りでファイル名を追加することができないので、それも検知します。
 
 ## Install
 
