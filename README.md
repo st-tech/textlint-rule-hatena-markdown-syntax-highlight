@@ -42,4 +42,4 @@ Test textlint rule by [textlint-tester](https://github.com/textlint/textlint-tes
 
 ## License
 
-Copyright &copy; Murai Yusei
+Copyright &copy; ZOZO, Inc.
