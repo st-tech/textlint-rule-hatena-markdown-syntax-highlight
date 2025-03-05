@@ -1,3 +1,6 @@
+// これは正しいシンタックスハイライトのファイルタイプの配列です。
+// https://help.hatenablog.com/entry/markup/syntaxhighlight に記載されています。
+
 export const languages: string[] = [
     "2html", "a2ps", "a65", "aap", "abap", "abaqus", "abc", "abel", "acedb", "actionscript", "ada", "aflex", "ahdl", "alsaconf", "amiga", "aml", "ampl", "ant", "antlr", "apache", "apachestyle", "applescript", "arch", "art", "asm", "asm68k", "asmh8300", "asn", "aspperl", "aspvbs", "asterisk", "asteriskvm", "atlas", "autohotkey", "autoit", "automake", "ave", "awk", "ayacc",
     "baan", "basic", "bc", "bdf", "bib", "bindzone", "blank", "brainfuck", "bst", "btm", "bzr",
