@@ -7,7 +7,7 @@ const report: TextlintRuleModule = (context) => {
     return {
         [Syntax.CodeBlock](node) {
             const lang = node.lang || '';
-            if (languages.includes(lang)) {
+            if (!lang || languages.includes(lang)) {
                 return;
             }
             if (lang.includes(":")) {
