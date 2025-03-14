@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yusei-murai/textlint-rule-hatena-markdown-syntax-highlight.git"
+    "url": "git+https://github.com/st-tech/textlint-rule-hatena-markdown-syntax-highlight.git"
   },
-  "author": "yusei-murai",
+  "author": "ZOZO inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yusei-murai/textlint-rule-hatena-markdown-syntax-highlight/issues"
+    "url": "https://github.com/st-tech/textlint-rule-hatena-markdown-syntax-highlight/issues"
   },
-  "homepage": "https://github.com/yusei-murai/textlint-rule-hatena-markdown-syntax-highlight#readme"
+  "homepage": "https://github.com/st-tech/textlint-rule-hatena-markdown-syntax-highlight#readme"
 }
